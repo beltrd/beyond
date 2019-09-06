@@ -1,0 +1,11 @@
+<h1>Products list</h1>
+<a href="/products/new">New product</a>
+<?php
+    foreach ($data as $key => $value) {
+?>
+<pre>
+<?php var_dump($value) ?>      
+</pre>
+<a href="/products/show/<?=$value['id']?>">Goto</a>
+<hr>   
+<?php } // endforeach ?>
